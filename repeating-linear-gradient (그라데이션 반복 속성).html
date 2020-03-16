@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>repeating-linear-gradient (그라데이션 반복 속성)</title>
+ <style>
+  div{width: 500px;
+      height: 500px;
+      border: 2px solid black;
+      margin:30px;}
+  .box1{background:repeating-linear-gradient(red,red 33px,yellow 66px,
+                                yellow 33px, blue 66px,blue 100px);}
+
+  .box2{background:repeating-linear-gradient(to right,red,red 33px,yellow 66px,
+                                yellow 33px, blue 66px,blue 100px);}
+
+  .box3{background:repeating-linear-gradient(to right,red,yellow 33px, blue 66px);}
+
+  .box4{background:repeating-radial-gradient(circle,yellow,yellow 10%, blue 10%, blue 20%,
+                              red 20%, red 30%);}
+
+  .box5{background:repeating-radial-gradient(circle at 60% 60%,yellow,yellow 10%, blue 10%
+                                            ,red 20%);}
+
+  /* 방향을 생략하면 위에서 아래로 진행*/
+
+  </style>
+</head>
+<body>
+  <h2>repeating-linear-gradient (그라데이션 반복 속성)</h2>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+  <div class="box5"></div>
+</body>
+</html>
